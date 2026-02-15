@@ -2,6 +2,6 @@
 
 echo "please enter your name ::"
 
-read username
+read USER_NAME
 
-echo "username is &username"
+echo "username is &USER_NAME"
