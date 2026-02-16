@@ -10,7 +10,7 @@ elif [ $NUMBER -eq 20]; then
 
 echo "given number:$NUMBER is greater than 20"
 
-else [ $NUMBER -ne 20]; then
+else [ $NUMBER -ls 20]; then
 
 echo "given number: $NUMBER is lessthan than 20 "
 
