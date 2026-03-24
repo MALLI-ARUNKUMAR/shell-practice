@@ -9,3 +9,11 @@ echo "plese run the script with the root user access "
 fi
 echo "installing nginx"
 dnf install nginx -y
+
+if [$? -ne 0]; then
+
+echo "installing nginx is....failure"
+exit 1
+else
+echo "installing nginx is....success"
+fi
