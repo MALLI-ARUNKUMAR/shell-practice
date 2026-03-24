@@ -2,4 +2,4 @@
 
 TIME_STAMP=$(date)
 
-echo "print the $TIME_STAMP"
+echo "Script executed at : $TIME_STAMP"
