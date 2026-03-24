@@ -11,4 +11,4 @@ echo "sumis :$SUM"
 #arrays#
 
 FRUITS=("apple" "banana" "mango")
-echo " fruit is: ${FRUITS[@]}"
+echo " fruit is: ${FRUITS[@#]}"
