@@ -8,4 +8,4 @@ echo "plese run the script with the root user access "
 
 fi
 echo "installing nginx"
-dnf install nginx-y
+dnf install nginx -y
