@@ -8,7 +8,7 @@ echo "Given number :$number is greater then 20"
 
 elif [ $number -eq 20 ]; then
 
-echo "Given number :$number is equal then 20"
+echo "Given number :$number is equal 20"
 
 else 
 
