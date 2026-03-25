@@ -1,5 +1,5 @@
 #!/bin/bash
 
-R='\[31m'
+R="\e[31m"
 
-echo " $R hello world "
+echo  -e " $R hello world "
