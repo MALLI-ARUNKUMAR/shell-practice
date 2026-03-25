@@ -1,8 +1,8 @@
 #!/bin/bash
 
 userid=$(id -u)
-logsfolder="var/log/shell-script"
-logsfile="var/log/shell-script/$0.log"
+logsfolder="/var/log/shell-script"
+logsfile="/var/log/shell-script/$0.log"
 
 if [ $userid  -ne 0 ]; then
 
@@ -19,11 +19,11 @@ VALIDATE () {
     fi    
 }
 
-dnf install nginx -y &>>logesfolder
+dnf install nginx -y &>> $logesfolder
 VALIDATE $? "installing nginx"
 
-dnf install mysql -y &>>logesfolder
+dnf install mysql -y &>> $logesfolder
 VALIDATE $? "installing mysql"
 
-dnf install nodejs -y &>>logesfolder
+dnf install nodejs -y &>> $logesfolder
 VALIDATE $? "installing nodejs"
