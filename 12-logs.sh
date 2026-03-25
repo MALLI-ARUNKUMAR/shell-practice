@@ -4,12 +4,12 @@ userid=$(id -u)
 logsfolder="var/log/shell-script"
 logsfile="var/log/shell-script/$0.log"
 
-if [ userid -ne 0 ]; then
+if [ $userid  -ne 0 ]; then
 
 echo "please run the script with root access "
 exit 1
 fi
-mkdir -p logsfolder
+mkdir -p $logsfolder
 
 VALIDATE () {
     if [ $1 -ne 0 ]; then
