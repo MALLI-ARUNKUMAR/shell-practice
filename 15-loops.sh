@@ -12,7 +12,7 @@ fi
 mkdir -p $logsfolder
 
 VALIDATE () {
-    if [ $1 -ne 0 ]; then
+    if [$1 -ne 0 ]; then
         echo "$2 is.......failure" | tee -a $logsfile
      else
         echo "$2 is......success" | tee -a $logsfile
@@ -22,7 +22,7 @@ VALIDATE () {
 for package in $@
 do
     dnf list installed $package &>> $logsfile
-    if [ $? - ne 0]
+    if [ $? - ne 0]; then
         echo "$package is not install installing now"
         dnf install $package -y &>> $logsfile
         VALIDATE $? " $package installing "
