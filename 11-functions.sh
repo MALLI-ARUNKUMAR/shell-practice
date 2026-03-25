@@ -2,7 +2,7 @@
 
 USER_ID=$(id -u)
 
-if [USER_ID -ne 0 ]; then
+if [ USER_ID -ne 0 ]; then
 
 echo "please run the script with root access "
 exit 1
@@ -13,6 +13,7 @@ VALIDATE () {
         echo "$2 is.......failure"
     else
         echo "$2 is......success"
+    fi    
 }
 
 dnf install nginx -y
