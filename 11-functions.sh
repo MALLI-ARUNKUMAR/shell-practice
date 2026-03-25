@@ -9,9 +9,9 @@ exit 1
 fi
 
 VALIDATE () {
-    if [$1 -ne 0]
+    if [ $1 -ne 0 ]; then
         echo "$2 is.......failure"
-    else
+     else
         echo "$2 is......success"
     fi    
 }
