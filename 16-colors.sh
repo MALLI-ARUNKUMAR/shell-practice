@@ -6,4 +6,4 @@ Y="\e[33m"
 B="\e[34m"
 N="\e[0m"
 
-echo  -e " $R hello world $N,$G my name is $N,$Y arunkumar $N,$B i am ggod boy $N "
+echo  -e " $R hello world $N,$G my name is $N,$Y arunkumar $N,$B i am good boy $N "
