@@ -6,16 +6,16 @@ logsfile="/var/log/shell-script/$0.log"
 
 if [ $userid  -ne 0 ]; then
 
-echo "please run the script with root access "
+echo "please run the script with root access " | tee -a $logsfile
 exit 1
 fi
 mkdir -p $logsfolder
 
 VALIDATE () {
     if [ $1 -ne 0 ]; then
-        echo "$2 is.......failure"
+        echo "$2 is.......failure" | tee -a $logsfile
      else
-        echo "$2 is......success"
+        echo "$2 is......success" | tee -a $logsfile
     fi    
 }
 
