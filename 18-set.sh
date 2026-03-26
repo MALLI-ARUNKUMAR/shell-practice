@@ -4,7 +4,7 @@ userid=$(id -u)
 logsfolder="/var/log/shell-script"
 logsfile="/var/log/shell-script/$0.log"
 
-set -e
+set -e # this will be  checking for errors is errors it will exit
 
 R="\e[31m"
 G="\e[32m"
